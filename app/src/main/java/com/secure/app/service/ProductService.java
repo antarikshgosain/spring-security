@@ -21,4 +21,8 @@ public class ProductService {
     public Product getProductById(int id) {
         return productRepo.findById(id).orElse(new Product());
     }
+
+    public Product addProduct(Product product) {
+        return productRepo.save(product);
+    }
 }

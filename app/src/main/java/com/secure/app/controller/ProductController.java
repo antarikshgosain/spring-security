@@ -33,4 +33,15 @@ public class ProductController {
         else
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
+
+    @PostMapping("/product")
+    public ResponseEntity<?> addProduct(@RequestBody Product product){
+        try{
+            Product productReceived = productService.addProduct(product);
+            return new ResponseEntity<>(productReceived, HttpStatus.CREATED);
+        } catch(Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+    }
 }
