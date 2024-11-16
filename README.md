@@ -7,7 +7,7 @@ username/password is picked from application.properties file
 username/password is picked from InMemorySecurityConfig 's @Bean UserDetailsService
 
 ### in-memory-auth-2
-username/password is picked from InMemorySecurityConfig 's @Bean UserDetailsService
-/        Everyone is welcome
-/user    User is welcome
-/admin   Admin is welcome
+username/password is picked from InMemorySecurityConfig 's @Bean UserDetailsService </br>
+/        Everyone is welcome</br>
+/user    User is welcome</br>
+/admin   Admin is welcome</br>
