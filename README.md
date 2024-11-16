@@ -8,6 +8,6 @@ username/password is picked from InMemorySecurityConfig 's @Bean UserDetailsServ
 
 ### in-memory-auth-2
 username/password is picked from InMemorySecurityConfig 's @Bean UserDetailsService </br>
-/        Everyone is welcome</br>
-/user    User is welcome</br>
-/admin   Admin is welcome</br>
+/ → Everyone is welcome</br>
+/user → User (and Admin) is welcome</br>
+/admin → Admin is welcome (Not User)</br>
